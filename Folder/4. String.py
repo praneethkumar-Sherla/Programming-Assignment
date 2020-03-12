@@ -10,6 +10,6 @@ def reduce_String(s):
             else:
                 i+=1
     return('Empty string')
-s=input().strip()
+s=input('Enter string: ').strip()
 re=reduce_String(s)
-print(re)
+print('Output: ',re)

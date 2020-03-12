@@ -49,13 +49,31 @@ def lca(root, a, b):
             return root
 
 tree = binarytree()
-t=int(input())
-arr = list(map(int, input().split()))
+t=int(input('Enter number of elements:'))
+arr = list(map(int, input('Enter elements(with space): ').split()))
 
 for i in range(t):
     tree.insert(arr[i])
 
-v = list(map(int, input().split()))
+v = list(map(int, input('Enter 2 vaules from elements for Parent Node(with space) : ').split()))
 
 ans = lca(tree.root, v[0], v[1])
-print (ans.info)
+
+
+
+
+print('--'*25)
+print ('Parent node is: ',ans.info)
+
+
+
+
+
+
+
+
+
+
+
+
+

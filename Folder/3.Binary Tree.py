@@ -51,11 +51,12 @@ def level(root):
 
 
 tree = binarytree()
-t = int(input())
+t = int(input('Enter Number of elements: '))
 
-arr = list(map(int, input().split()))
+arr = list(map(int, input('Enter elemnts(with space): ').split()))
 
 for i in range(t):
     tree.create(arr[i])
-
+print('-'*20)    
+print('Order of Binary Tree is:')
 level(tree.root)
