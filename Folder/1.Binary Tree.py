@@ -59,9 +59,6 @@ v = list(map(int, input('Enter 2 vaules from elements for Parent Node(with space
 
 ans = lca(tree.root, v[0], v[1])
 
-
-
-
 print('--'*25)
 print ('Parent node is: ',ans.info)
 
